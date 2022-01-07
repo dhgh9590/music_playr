@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음악 플레이어</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"><!-- 폰트어썸 신버전 CDN -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body >
+    <section>
+        <div class="music_wrap">
+            <div class="music_title">
+                <em>Troye Sivan - Wild</em>
+            </div>
+            <div class="img_wrap">
+                <img class="music_img" src="img/1.jpg" alt="">
+            </div>
+            <audio id="audioContainer"> <!-- audio play를 위함 -->
+                <source id="audioSource" src=""> <!-- audio 파일 -->
+            </audio>
+            <div class="slideContainer">
+                <input type="range" min="0" max="100" value="50"  id="audio_slider">
+                <p>Value: <span id="audio_value"></span></p>
+            </div>
+            <div class="btn_wrap">
+                <ul>
+                    <li class="PrevBtn"><em><i class="fas fa-angle-double-left"></i></em></li>
+                    <li class="playBtn"><em><i class="fas fa-play"></i></em></li>
+                    <li class="stopBtn"><em><i class="fas fa-stop"></i></em></li>
+                    <li class="NextBtn"><em><i class="fas fa-angle-double-right"></i></em></li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
